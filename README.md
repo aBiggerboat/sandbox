@@ -1,2 +1,3 @@
 # sandbox
-A development sandbox to play around in. 
+A development sandbox to play around in.
+And learn new things with!!
