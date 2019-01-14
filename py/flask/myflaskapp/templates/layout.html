@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <title>MyFlaskApp</title>
+</head>
+
+<body>
+  {% include 'includes/_navbar.html' %}
+  <div class="container">
+    {% include 'includes/_messages.html' %}
+    {% block body %}{% endblock %}
+  </div>
+  <footer class="footer mt-auto py-3">
+    <div class="container">
+      <span class="text-muted">Place sticky footer content here.</span>
+    </div>
+  </footer>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <!-- CK Editor 4 must be used in this way; 5 not compatible yet -->
+  <script src="https://cdn.ckeditor.com/4.11.2/standard/ckeditor.js"></script>
+  <script type="text/javascript">
+    CKEDITOR.replace('editor')
+  </script>
+</body>
+
+</html>
